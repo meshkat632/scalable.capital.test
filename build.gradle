@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories { mavenCentral() }
+
+dependencies { 
+    compile 'org.jsoup:jsoup:1.11.3'
+}
+
+mainClassName = "org.scalablecapital.Main"
+run {
+    args += 'mario'
+}
